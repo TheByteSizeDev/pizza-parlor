@@ -35,5 +35,5 @@ export const addNewOrder = (order) => {
 
   // The below line creates and dispatches a new custom event titled "stateChanged".
   // We will still need to add a listener for this event.
-  displayOrders();
+  document.dispatchEvent(new CustomEvent("stateChanged"));
 };
